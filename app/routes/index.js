@@ -6,5 +6,18 @@ export default Ember.Route.extend({
       listings: this.store.findAll('listing'),
       categories: this.store.findAll('category')
     });
+  },
+  actions: {
+    saveNewListing(params) {
+      console.log(params);
+      var NewListing = this.store.createRecord('listing', params);
+      var category = params.category;
+      console.log(category);
+      category.get('listings').addObject(newListing);
+      newListing.save().then(function(){
+        return category.save();
+      });
+      this.transitionTo('index');
+    }
   }
 });

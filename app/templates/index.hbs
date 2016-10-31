@@ -1,7 +1,19 @@
 <div class="container">
-      <ul>
+  <div class="row">
+      <div class="col-md-7">
         {{#each model.listings as |listing|}}
           {{#link-to 'listing' listing.id}}<li>{{listing.title}} - {{listing.text}}</li>{{/link-to}}
         {{/each}}
+      </div>
+      <div class="col-md-4">
+        <h2><u>New Listing</u></h2>
+        {{new-listing saveNewListing="saveNewListing" listing=model.listing category=model.category}}
+      </div>
+      <div class='col-md-1'>
+      </div>
+
+  </div>
+      <ul>
+
       </ul>
 </div>

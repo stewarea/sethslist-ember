@@ -1,0 +1,15 @@
+<form class="form-group">
+    <label for="title">Title</label>
+    {{input class="form-control" value=title id="title"}}
+
+    <label for="price">Price</label>
+    {{input class="form-control" value=price id="price"}}
+
+    <label for="text">Text</label>
+    {{input class="form-control" value=text id="text"}}
+
+    <label for="image">Image</label>
+    {{input class="form-control" value=image id="image"}}
+
+    <button class="btn" {{action "saveNewListing"}}>Save</button>
+</form>

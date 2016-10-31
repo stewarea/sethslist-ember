@@ -1,0 +1,20 @@
+<header>
+  <a href="/"><p>Sethslist</p></a>
+</header>
+<div class="row">
+  <div class="col-xs-3 sidebar">
+    <h2><u>Categories</u></h2>
+    <ul>
+
+        {{#each model.categories as |category|}}
+          {{#link-to 'category' category.id}}<li>{{category.name}}</li>{{/link-to}}
+        {{/each}}
+
+    </ul>
+  </div>
+  <div class="col-xs-9">
+    {{outlet}}
+  </div>
+  <footer>
+  </footer>
+</div>

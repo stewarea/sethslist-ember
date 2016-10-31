@@ -1,2 +1,13 @@
-{{new-listing-category saveNewListing="saveNewListing" category=model}}
-{{model.name}}
+<div class="row">
+  <div class="col-xs-8">
+    <h3><u>Listings in {{model.name}}:</u></h3>
+
+
+    {{listing-list listings=model.listings}}
+    
+  </div>
+  <div class="col-xs-4">
+    <h3><u>New {{model.name}} posting</u></h3>
+    {{new-listing-category saveNewListing="saveNewListing" category=model}}
+  </div>
+</div>

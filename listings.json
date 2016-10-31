@@ -2,12 +2,30 @@
   "title": "Seth's Car",
   "text": "Good for Ubering",
   "image": "http://images.gtcarlot.com/pictures/36349097.jpg",
-  "price": "30"
+  "price": "30",
+  "category": "0",
+  "created": "10/01/2016"
+}, {
+  "title": "Evin's Car",
+  "text": "Good for Ubering",
+  "image": "http://images.gtcarlot.com/pictures/36349097.jpg",
+  "price": "30",
+  "category": "0",
+  "created": "10/15/2016"
+}, {
+  "title": "Peter's Car",
+  "text": "Good for Ubering",
+  "image": "http://images.gtcarlot.com/pictures/36349097.jpg",
+  "price": "30",
+  "category": "0",
+  "created": "10/31/2016"
 }, {
   "title": "Seth's shirt",
   "text": "holes in the armpits",
   "image": "http://i1278.photobucket.com/albums/y514/sdwillden/IMG_2553_zps537dfa1c.jpg",
-  "price": "400"
+  "price": "400",
+  "category": "1",
+  "created": "10/31/2016"
   }],
   "categories": [{
     "name": "Cars"

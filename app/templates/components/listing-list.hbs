@@ -1,0 +1,5 @@
+{{#each listings as |listing|}}
+{{#link-to 'listing' listing.id}}
+  <li>{{listing.title}}</li>
+  {{/link-to}}
+{{/each}}
